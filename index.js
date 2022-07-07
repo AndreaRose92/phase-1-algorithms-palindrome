@@ -1,13 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const inverseWordArray = [...word].reverse()
+  const inverseWord = inverseWordArray.join('')
+
+  if (word === inverseWord) {return true} else {return false}
+
 }
 
 /* 
-  Add your pseudocode here
+  input word => array
+  array => flipped array
+  if array === flipped array, yay!
 */
 
 /*
-  Add written explanation of your solution here
+Taking the inputted string and breaking it into an array of letters allows it to be manipulated and reversed.
 */
 
 // You can run `node index.js` to view these console logs
